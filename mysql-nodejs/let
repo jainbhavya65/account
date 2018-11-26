@@ -1,0 +1,6 @@
+        			console.log(result1[i])
+      				var date = moment(result1[i].subscription_end_date)
+      				var today = moment(new Date())
+        			var diffDays =  date.diff(today, 'hours')
+        			console.log(diffDays)
+        			if (diffDays <= 0){
