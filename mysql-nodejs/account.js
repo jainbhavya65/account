@@ -10,17 +10,12 @@ var smtpTransport = nodemailer.createTransport({
     host: "smtp.gmail.com",
     secure: "true",
     auth: {
-        user: "bhavya@iface.io",
-        pass: "!@!^&iitjee@)!@2"
     }
 });
 
 var pool = mysql.createPool({
     connectionLimit : 15,
     host: "192.168.1.18",
-    user: "iface",
-    password: "Iface#@!123",
-    database: "iface_account"
 });
 
 pool.getConnection(function (err, connection) {

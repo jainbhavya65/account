@@ -4,7 +4,6 @@ var diff = require('diff');
 var cron = require('node-cron')
 var nodemailer = require("nodemailer");
 var smtpTransport = require('nodemailer-smtp-transport');
-var stripe = require('stripe')('sk_test_6pmcf1MsiY5pTMPMaOqxbfXJ');
 var async = require('async')
 
 var smtpTransport = nodemailer.createTransport({
@@ -12,8 +11,6 @@ var smtpTransport = nodemailer.createTransport({
     host: "smtp.gmail.com",
     secure: "true",
     auth: {
-        user: "bhavya@iface.io",
-        pass: "!@!^&iitjee@)!@2"
     }
 });
 
@@ -27,9 +24,6 @@ var smtpTransport = nodemailer.createTransport({
 var pool = mysql.createPool({
     connectionLimit : 15,
     host: "192.168.1.18",
-    user: "iface",
-    password: "Iface#@!123",
-    database: "iface_crm_admin"
 });
 
 
